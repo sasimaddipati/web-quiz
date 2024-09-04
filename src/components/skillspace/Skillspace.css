@@ -1,0 +1,27 @@
+.skillspace-body{
+      height: 100dvh;
+      background-color: rgb(49, 55, 41);
+}
+.skillspace-header{
+      display: flex;
+      justify-content: space-between;
+}
+.skillspace-header-content{
+      width: 50%;
+       text-align: center;
+       border: 2px solid white;
+       color: white;
+}
+.skillspace-header-content-bg{
+      width: 50%;
+       text-align: center;
+       border: 2px solid white;
+       color: white;
+       background-color: blue;
+}
+.available{
+    width: 400px;
+      color: white;
+      margin: auto;
+      margin-top: 50px;
+}
