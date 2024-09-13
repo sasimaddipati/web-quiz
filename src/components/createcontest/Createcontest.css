@@ -1,89 +1,141 @@
+/* Createcontest.css */
 .compiler-container {
-    width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-.contest-name{
-      width: 400px;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-  .compiler-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+
+.compiler-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contest-name {
+  width: 60%;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contest-name:focus {
+  border-color: #007bff;
+}
+
+.problem-statement,
+.io-section {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: #007bff;
+}
+
+.input-output {
+  margin-bottom: 20px;
+}
+
+.prev-btn,
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-right: 10px;
+}
+.add-btn{
+  background-color: green;
+}
+.prev-btn:hover,
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.prev-btn:active,
+.add-btn:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: none;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Additional styling for better form layout */
+.problem-statement label,
+.input-output label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+}
+.textarea-context{
+    background-color: #ccc;
+}
+.problem-statement textarea,
+.io-section textarea {
+  margin-top: 10px;
+}
+
+.io-section {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.io-section .input-output {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.io-section .input-output:last-child {
+  margin-right: 0;
+}
+.add-btn,.prev-btn{
+    margin-left: 45%;
+}
+
+@media (max-width: 768px) {
+  .compiler-container {
+      width: 90%;
   }
 
-  
-  .problem-statement label {
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .problem-statement textarea {
-    width: 100%;
-    height: 280px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    resize: none;
-  }
-  
   .io-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+      flex-direction: column;
   }
-  
-  .input-output {
-    width: 48%;
-  }
-  
-  .input-output label {
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .input-output textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    resize: none;
-  }
-  
-  .compiler-buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .prev-btn, .add-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 
+  .io-section .input-output {
+      margin-right: 0;
+      margin-bottom: 10px;
   }
-  .prev-btn {
-    background-color: #ffcc80;
-    float: right;
+
+  .io-section .input-output:last-child {
+      margin-bottom: 0;
   }
-  
-  .prev-btn:hover {
-    background-color: #ffa726;
-  }
-  
-  .add-btn {
-    background-color: #81c784;
-  }
-  
-  .add-btn:hover {
-    background-color: #66bb6a;
-  }
-  
+}

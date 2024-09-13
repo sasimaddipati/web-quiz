@@ -1,0 +1,118 @@
+/* Classzone.css */
+
+.classzone-body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #1b231c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100dvh;
+  }
+  
+  .create-zone-box {
+    display: flex;
+    align-items: center;
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .create-zone-box:hover {
+    background-color: #0056b3;
+  }
+  
+  .create-zone-img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+  }
+  
+  .create-zone-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .zone-box-dis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .zone-box {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 100PX;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #3a3e3b;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: white;
+  }
+  
+  .zone-name {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .zone-edit-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .zone-save-button,
+  .zone-edit-button,
+  .zone-delete-button {
+    padding: 6px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .zone-save-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .zone-save-button:hover {
+    background-color: #218838;
+  }
+  
+  .zone-edit-button {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .zone-edit-button:hover {
+    background-color: #e0a800;
+  }
+  
+  .zone-delete-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .zone-delete-button:hover {
+    background-color: #c82333;
+  }
+  

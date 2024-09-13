@@ -13,6 +13,9 @@ import Createquiz from './components/createquiz/Createquiz';
 import Createcontest from './components/createcontest/Createcontest';
 import Unassigned from './components/unassigned/Unassigned';
 import Upcoming from './components/upcoming/Upcoming'
+import Codeeditor from './components/codeeditor/Codeeditor'
+import Joinedzone from './components/joinzone/Joinzone'
+import Createzone from './components/createzone/Createzone';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -33,10 +36,35 @@ const router = createBrowserRouter([
       {
         path: 'skillspace',
         element: <Skillspace />,
+         children:[
+            {
+               path:'',
+               element:<Codeeditor/>
+            },
+            {
+              path:'codeeditor',
+              element:<Codeeditor/>
+           }
+         ]
       },
       {
         path: 'classzone',
         element: <Classzone />,
+        children:[
+          {
+            path:'',
+            element:<Createzone />
+          },
+          {
+            path:'createzone',
+            element:<Createzone />
+          },
+          {
+             path:'joinedzone',
+             element:<Joinedzone/>
+          }
+
+        ]
       },
     ],
   },

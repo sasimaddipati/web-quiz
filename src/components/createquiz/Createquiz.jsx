@@ -39,10 +39,13 @@ function Createquiz() {
     return (
         <div className="quiz-container">
             <input type="text" placeholder='Quiz Name' value={quizname} onChange={funsavequizname}/>
+            <button type='button' className='btn1' onClick={handleSaveQuiz}>Save Quiz</button>
+
             <form onSubmit={handleSubmit(onSubmit)}>   
                 <h1>Question: {countque}</h1>
-                <input 
+                <textarea
                     type="text"
+                    className='textarea-quiz'
                     placeholder='Question'
                     {...register("question")}
                 />
@@ -65,11 +68,9 @@ function Createquiz() {
                         />
                     ))
                 }
-                <div className='buttons'>
-                    <button type='submit' className='btn'>Next</button>
-                    <button type='button' className='btn' onClick={handleSaveQuiz}>Save Quiz</button>
-                </div>
+                <button className='btn'>Add</button>
             </form>
+
         </div>
     );
 }

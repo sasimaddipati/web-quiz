@@ -55,9 +55,14 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.textarea-quiz{
+     background-color: #f4f4f4;
+     color: #333;
+}
 
-.btn {
-    background-color: #007bff;
+.btn1 {
+    background-color: #2b7033;
+    margin-left: 80%;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -66,20 +71,18 @@ body {
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-
-.btn:hover {
-    background-color: #0056b3;
+.btn1:hover{
+     background-color: #2b7033;
+}
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 85%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.btn:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-.quiz-container button[type="button"] {
-    background-color: #28a745;
-}
-
-.quiz-container button[type="button"]:hover {
-    background-color: #218838;
-}

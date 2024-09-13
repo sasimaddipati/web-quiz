@@ -48,6 +48,7 @@ function Createcontest() {
                     <label htmlFor="problem-statement">Problem Statement:</label>
                     <textarea
                         id="problem-statement"
+                         className='textarea-context'
                         rows="10"
                         placeholder="Describe the problem here..."
                         {...register("description")}
@@ -55,10 +56,12 @@ function Createcontest() {
                 </div>
             </form>
             <form onSubmit={handleSubmit(addInputOutput)}>
+            <button type="submit" className="prev-btn">Add Input/Output</button>
                 <div className="io-section">
                     <div className="input-output">
                         <label htmlFor="input">Input:</label>
                         <textarea
+                            className='textarea-context'
                             id="input"
                             rows="5"
                             placeholder="Enter input here..."
@@ -68,6 +71,7 @@ function Createcontest() {
                     <div className="input-output">
                         <label htmlFor="output">Output:</label>
                         <textarea
+                             className='textarea-context'
                             id="output"
                             rows="5"
                             placeholder="Enter desired output here..."
@@ -75,10 +79,8 @@ function Createcontest() {
                         ></textarea>
                     </div>
                 </div>
-                <button type="submit" className="prev-btn">Add Input/Output</button>
-
             </form>
-            <button type="button" className="add-btn" onClick={handleSave}>Save</button>
+            <button type="button" className="add-btn" onClick={handleSave}>Create</button>
         </div>
     );
 }

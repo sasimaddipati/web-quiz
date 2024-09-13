@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link,Outlet } from 'react-router-dom';
 import './Skillspace.css';
 
 const Skillspace = () => {
@@ -12,17 +13,17 @@ const Skillspace = () => {
      <div>
        <div className='skillspace-body'>
          <div className='skillspace-header'>
-           <div className={flag === 1 ? 'skillspace-header-content' : 'skillspace-header-content-bg'}>
-             <h1 onClick={() => onClickEvent(0)}>Quiz</h1>
-           </div>
-           <div className={flag === 0 ? 'skillspace-header-content' : 'skillspace-header-content-bg'}>
-             <h1 onClick={() => onClickEvent(1)}>Code</h1>
-           </div>
+         <ul className="nav-list">
+  <Link to='#' className='nav-link'>Quiz</Link>
+  <Link to='#' className='nav-link'>Coding Contest</Link>
+  <Link to='codeeditor' className='nav-link'>Code Editor</Link>
+</ul>
+
+
          </div>
-         <h1 className='available'>Show available contests</h1>
+         <Outlet/>
        </div>
      </div>
    );
 };
-
 export default Skillspace;
